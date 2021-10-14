@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "jquery"
+            ],
             "outputPath": "dist/receipe",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -61,7 +64,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "receipe:build"
+            "browserTarget": "receipe:build",
+            "port": 8070
           },
           "configurations": {
             "production": {
@@ -120,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "receipe"
+  "defaultProject": "receipe",
+  "cli": {
+    "analytics": "7f4a4c80-0cbb-4420-bc24-1206ed81c9e9"
+  }
 }
