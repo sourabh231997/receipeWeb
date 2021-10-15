@@ -24,12 +24,13 @@ let cacheTime = 86400000 * 7;
 app.use(express.static(__dirname, { maxAge: cacheTime }));
 
 app.get('/getApi', function(req, res,next) {
-    sendReceipeAlertData().then(data => {
-        res.json({'success':true,data})
-    }).catch(err => {
-        console.log(err);
-        next(err)
-    })
+    res.json({'success':true,'data':'api working'})
+    // sendReceipeAlertData().then(data => {
+    //     res.json({'success':true,data})
+    // }).catch(err => {
+    //     console.log(err);
+    //     next(err)
+    // })
 });
 
 function sendReceipeAlertData(){

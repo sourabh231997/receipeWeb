@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UserService } from '../_services/user.service';
+import * as $ from 'jquery';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(  private userService: UserService) { }
 
-  ngOnInit(): void { 
+  ngOnInit() {
+    this.userService.getReceipeData().subscribe(success => {
+      console.log(success);
+    }) 
   }
 
 }
