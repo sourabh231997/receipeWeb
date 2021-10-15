@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  ::ng-deep .intercom-lightweight-app-launcher{
+      left: 15px !important;
+      right: unset !important;
+  }
+}
+
+::ng-deep #gist-app{
+  display: show !important;
+}
