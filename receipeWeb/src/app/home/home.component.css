@@ -1,0 +1,246 @@
+/* .banner_spices{
+    background: url(../../assets/img/banner-img.jpg);
+    height: 600px;
+    background-size: cover;
+    position: relative;
+} */
+
+.header_wrap{
+    background:red
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    top: 50% !important;
+    left: 50% !important;
+    width: 30%;
+    transform: translate(-50%,-50%);
+}
+.healthy_herb{
+    background:url(../../assets/img/shop-now.jpg);
+    background-size:cover;
+    position: relative;
+    margin-top: 0px;
+    height: 400px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.dt-sc-sub-title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.dt-sc-main-title{
+    color: #f4b323;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.dt-sc-grid-banner-inner.text-start {
+    width: 40%;
+}
+.dt-sc-description{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.heading_main{
+    text-align: center;
+}
+.product_content h3{
+ color: #000;
+}
+.product_content p{
+color: #000;
+}
+ .read_more_product{
+    background: unset !important;
+    border-color: #9f4215 !important;
+    border-radius: 30px;
+    color: #000;
+    transition: all .5s ease;
+    font-size: 16px;
+    padding: 5px 12px;
+    border:2px solid;
+}
+.product_content {
+    text-align: center;
+    padding: 20px 0px;
+}
+ .read_more_product:hover{
+    color: #292929;
+    background-color: #f4b323 !important;
+    border-color: #f4b323 !important;
+}
+.common_padding{
+    padding: 50px 0px;
+}
+.heading_main {
+    margin-bottom: 30px;
+}
+.dt-sc-blog-title a{
+    color: #000;
+}
+.dt-sc-blog-meta {
+    display: flex;
+}
+.dt-sc-blog-author{
+    display: flex;
+}
+.dt-sc-blog-date{
+    display: flex;
+}
+.dt-sc-blog-comment{
+    display: flex;
+}
+.blog_content_wrap {
+    display: flex;
+    align-items: center;
+}
+.dt-sc-blog-meta p {
+    margin-right: 10px;
+    font-size: 14px;
+}
+.dt-sc-blog-meta p i {
+    color: #a04418;
+    margin-right: 5px;
+}
+.dt-sc-blog-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.quality_product{
+    background-color: #F4F4F4;
+}
+.heading_main img {
+    width: 40px;
+}
+.contact_form{
+    background: #f4f4f4;
+    background-size: cover;
+    position: relative;
+}
+.list_star{
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+}
+.best_product{
+    display: flex;
+}
+.best_product_list {
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 0 0 13px 0 rgb(0 0 0 / 6%);
+    margin: 20px 11px;
+    background: #fff;
+}
+.display_tab{
+    justify-content: center;
+}
+.tabs_wrap .nav-link.active{
+    background:#F4B331;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #F4B331;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.tabs_wrap .nav-link{
+    border:1px solid #9F4215;
+    border-radius: 30px;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.pt_tbs{
+    margin-right: 10px;
+}
+.blog_product_wrp{
+    background:url(../../assets/img/product-section-bg-img_1.jpg);
+    position: relative;
+    background-size: cover;
+}
+.flat_wrap{
+    border-top: 1px solid #d15d20;
+    border-bottom: 1px solid #d25e20;
+    color: #f4b331;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.herb_wrap {
+    color: #fff;
+    font-size: 45px;
+}
+.coupon{
+    color: #f4b331;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.coupon span{
+    color: #fff;
+}
+.heading_main p {
+    font-size: 18px;
+}
+.heading_main h3 {
+    font-size: 26px;
+}
+.product_content p {
+    font-size: 13px;
+}
+.view_more {
+    border-color: #d25e20;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.view_more:hover {
+    background:#f4b331;
+    color: #000;
+    border-color: #f4b331;
+}
+.shop_now:hover {
+    background:#f4b331;
+    color: #000;
+    border-color: #f4b331;
+}
+.shop_now {
+    border-color: #fff;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.input_sty {
+    height: 40px;
+}
+.form_wrap label {
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+.form_wrap {
+    width: 80%;
+    margin: auto;
+}
+.btn_form_sub{
+    margin-top: 35px !important;
+    text-align: center;
+}
+.dt-sc-blog-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
