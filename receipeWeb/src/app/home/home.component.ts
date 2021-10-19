@@ -11,9 +11,9 @@ export class HomeComponent implements OnInit {
   constructor(  private userService: UserService) { }
 
   ngOnInit() {
-    this.userService.getReceipeData().subscribe(success => {
-      console.log(success);
-    }) 
+    // this.userService.getReceipeData().subscribe(success => {
+    //   console.log(success);
+    // }) 
   }
 
 }
