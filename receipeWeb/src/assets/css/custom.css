@@ -158,7 +158,7 @@ footer .site-footer__bottom p, footer .site-footer__bottom a {
 }
 .header_cls .header_wrap .nav-item a{
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
 }
 .header_cls .header_wrap .nav-item a.active{
     color: #fff;
@@ -170,8 +170,51 @@ footer .site-footer__bottom p, footer .site-footer__bottom a {
     color: #fff;
 }
 
-
-
+.common_padding{
+    padding: 50px 0px;
+}
+.heading_main p {
+    font-size: 18px;
+}
+.heading_main h3 {
+    font-size: 26px;
+    color: #a74a18;
+    font-weight: 700;
+}
+.heading_main img {
+    width: 40px;
+}
+.heading_main {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about_banner{
+    background: url(../../assets/img/about-img.jpg);
+    background-size: cover;
+    position: relative;
+    height: 300px;
+}
+.common_heading_banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.common_heading_banner h1 {
+    color: #fff;
+    font-size: 30px;
+}
+.bread_wrap {
+    color: #fff;
+    font-size: 14px;
+}
+.home_bread {
+    color: #fff;
+}
+::placeholder{
+    font-size: 14px;
+}
 /* responsive css start here */
  @media(max-width:767px){
     .best_product{

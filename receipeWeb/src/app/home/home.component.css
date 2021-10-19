@@ -52,9 +52,6 @@
     font-size: 16px;
     margin-bottom: 20px;
 }
-.heading_main{
-    text-align: center;
-}
 .product_content h3{
  color: #000;
 }
@@ -120,9 +117,7 @@ color: #000;
 .quality_product{
     background-color: #F4F4F4;
 }
-.heading_main img {
-    width: 40px;
-}
+
 .contact_form{
     background: #f4f4f4;
     background-size: cover;
@@ -187,12 +182,7 @@ color: #000;
 .coupon span{
     color: #fff;
 }
-.heading_main p {
-    font-size: 18px;
-}
-.heading_main h3 {
-    font-size: 26px;
-}
+
 .product_content p {
     font-size: 13px;
 }
