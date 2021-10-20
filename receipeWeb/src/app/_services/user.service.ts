@@ -20,7 +20,7 @@ export class UserService {
         return { headers: headers }
       }
 
-    getReceipeData() {
-    return this.httpClient.get(`${this.backendUrl}/getApi`, this.getHeaders())
+    sendUserMailData(data) {
+    return this.httpClient.post(`${this.backendUrl}/sendUserMail`, data, this.getHeaders())
     }   
 }
