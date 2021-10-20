@@ -48,18 +48,3 @@
     width: 110px;
     margin: auto;
 }
-.pagination_wrap {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.pagination_wrap .page-item.active .page-link {
-    z-index: 3;
-    color: #fff;
-    background-color: #9f4215;
-    border-color: #9f4215;
-}
-.pagination_wrap .page-link {
-    font-size: 14px;
-    color: #000;
-}
