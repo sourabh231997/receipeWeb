@@ -1,0 +1,53 @@
+.common_design{
+    background: #e9e9e9;
+    padding: 10px 10px;
+    border-left: 3px solid #9f4215;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.common_design a{
+    color:#000;
+}
+.shop_wrap{
+    margin-bottom: 30px;
+}
+.shop_wrap .accordion .accordion-button {
+    font-size: 14px;
+}
+.list_shop_wrap li{
+    border: 1px solid #f4f4f4;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-right: 9px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 4px;
+}
+.list_shop_wrap li:hover{
+    background:#f4b331;
+    color:#fff;
+}
+.list_shop_wrap {
+    padding-left: 0;
+}
+.heading_shp, .heading_shp a{
+    color: #9f4215;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.show_wrap_grid_ui{
+    text-align: center;
+    border: 2px solid transparent;
+    box-shadow: 0 0 13px 0 rgb(0 0 0 / 6%);
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+.show_wrap_grid_ui p{
+    font-size: 14px;
+    font-weight: 600;
+}
