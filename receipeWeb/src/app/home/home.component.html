@@ -209,29 +209,40 @@
             <img src="../../assets/img/star-img.png" class="img-fluid">
         </div>
         <div class="form_wrap">
-            <form>
+            <form name="form" (ngSubmit)="f.form.valid && sendMail()" #f="ngForm" novalidate>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control input_sty" placeholder="Enter Your Name">
+                            <input type="text" class="form-control input_sty" placeholder="Enter Your Name" id="user_name" name="user_name" [(ngModel)]="model.user_name" #user_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && user_name.invalid }" required>
+                            <div *ngIf="f.submitted && user_name.invalid" class="invalid-feedback">
+                                <div *ngIf="user_name.errors.required">Name is required</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" class="form-control input_sty" placeholder="Enter Your Email">
+                            <input type="text" class="form-control input_sty" placeholder="Enter Your Email" name="email" id="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+                            <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                                <div *ngIf="email.errors.required">Email is required</div>
+                                <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label>Phone No</label>
-                            <input type="text" class="form-control input_sty" placeholder="Enter Your Phone No">
+                            <input type="text" class="form-control input_sty" placeholder="Enter Your Phone No" name="phone" id="phone" [(ngModel)]="model.phone" #phone="ngModel" [ngClass]="{ 'is-invalid': f.submitted && phone.invalid }" required minlength="10" maxlength="10">
+                            <div *ngIf="f.submitted && phone.invalid" class="invalid-feedback">
+                                <div *ngIf="phone.errors.required">Phone number is required</div>
+                                <div *ngIf="phone.errors.minlength">Phone number must be at least 10 characters</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-12 mt-4 btn_form_sub">
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary read_more_product">Submit</button> 
+                            <button class="btn btn-primary read_more_product">Submit</button> 
                         </div>
                     </div>
                 </div>
@@ -241,7 +252,7 @@
 </section>
 
 
-<section class=" common_padding blog_post_wrap">
+<!-- <section class=" common_padding blog_post_wrap">
     <div class="container">
         <div class="heading_main">
             <h3>Blog Post</h3>
@@ -373,6 +384,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <app-footer></app-footer>
