@@ -36,21 +36,32 @@
             </div>
             <div class="col-sm-12">
                 <div class="form_wrap_cont">
-                    <form>
+                    <form name="form" (ngSubmit)="f.form.valid && sendMail()" #f="ngForm" novalidate>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="user_name" id="user_name" [(ngModel)]="model.user_name" placeholder="Name" required>
+                                    <input type="text" class="form-control" name="user_name" id="user_name" [(ngModel)]="model.user_name" placeholder="Name" #user_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && user_name.invalid }" required>
+                                    <div *ngIf="f.submitted && user_name.invalid" class="invalid-feedback">
+                                        <div *ngIf="user_name.errors.required">Name is required</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email" name="email" id="email" [(ngModel)]="model.email" email>
+                                    <input type="text" class="form-control" placeholder="Email" name="email" id="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+                                    <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                                        <div *ngIf="email.errors.required">Email is required</div>
+                                        <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Phone" name="phone" id="phone" [(ngModel)]="model.phone">
+                                    <input type="text" class="form-control" placeholder="Phone" name="phone" id="phone" [(ngModel)]="model.phone" #phone="ngModel" [ngClass]="{ 'is-invalid': f.submitted && phone.invalid }" required minlength="10" maxlength="10">
+                                    <div *ngIf="f.submitted && phone.invalid" class="invalid-feedback">
+                                        <div *ngIf="phone.errors.required">Phone number is required</div>
+                                        <div *ngIf="phone.errors.minlength">Phone number must be at least 10 characters</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-12">
@@ -60,7 +71,7 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                   <button type="submit" class="btn btn-primary submit_contact w-25" (click)="sendMail()">Submit</button>
+                                   <button class="btn btn-primary submit_contact w-25">Submit</button>
                                 </div>
                             </div>
                         </div>
