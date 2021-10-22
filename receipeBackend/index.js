@@ -36,9 +36,13 @@ app.post('/sendUserMail', function(req, res,next) {
     let { name,email,phone,message } = req.body;
     sendReceipeAlertData(name,email,phone,message).then(data => {
         res.json({'success':true,data})
-    }).catch(err => {
-        console.log(err);
-        next(err)
+    }).catch(error => {
+        res.status(error.status || 500);
+        res.json({
+            error: {
+            message: error.message,
+            },
+        });
     })
     }
 });
