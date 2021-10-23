@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     this.model.phone = '';
   }
 
-  sendMail(){
+  sendMail(f: any){
     let userData = {
       'name':this.model.user_name,
       'email':this.model.email,
@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit {
         if(this.model.phone == '') this.notifyService.showError("phone", "Field Required")
       }else{
         this.notifyService.showSuccess("Mail sent successfully !!", "Rasayati")
+        f.resetForm();
       }
     },err => {
       let errorMsg = err.error.error.message      

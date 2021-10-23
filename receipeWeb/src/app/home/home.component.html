@@ -209,7 +209,7 @@
             <img src="../../assets/img/star-img.png" class="img-fluid">
         </div>
         <div class="form_wrap">
-            <form name="form" (ngSubmit)="f.form.valid && sendMail()" #f="ngForm" novalidate>
+            <form name="form" (ngSubmit)="f.form.valid && sendMail(f)" #f="ngForm" novalidate>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="form-group">
