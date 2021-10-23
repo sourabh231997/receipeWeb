@@ -25,7 +25,7 @@ export class ContactComponent implements OnInit {
     this.model.message = '';
   }
 
-  sendMail(){
+  sendMail(f: any){
     let userData = {
       'name':this.model.user_name,
       'email':this.model.email,
@@ -39,6 +39,7 @@ export class ContactComponent implements OnInit {
         if(this.model.phone == '') this.notifyService.showError("phone", "Field Required")
       }else{
         this.notifyService.showSuccess("Mail sent successfully !!", "Rasayati")
+        f.resetForm();
       }
     })
   }
