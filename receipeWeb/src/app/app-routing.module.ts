@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogdetailComponent } from './blogdetail/blogdetail.component';
 import { ShopComponent } from './shop/shop.component';
+import { ShopdetailComponent } from './shopdetail/shopdetail.component';
 
 
 const appRoutes: Routes = [
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'blog-detail', component: BlogdetailComponent },
-  { path: 'shop', component: ShopComponent }
+  { path: 'shop', component: ShopComponent },
+  { path: 'shop-detail', component: ShopdetailComponent }
   // {path:'**',redirectTo:'/',pathMatch:'full'}
   // { path: '**', redirectTo: '' },
 ];

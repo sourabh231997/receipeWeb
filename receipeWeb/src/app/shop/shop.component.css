@@ -38,7 +38,11 @@
 .heading_shp, .heading_shp a{
     color: #9f4215;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 16px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #eb4227;
 }
 .show_wrap_grid_ui{
     text-align: center;
@@ -46,6 +50,15 @@
     box-shadow: 0 0 13px 0 rgb(0 0 0 / 6%);
     padding: 20px 10px;
     margin-bottom: 20px;
+}
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 1px solid #eb4227;
+    border-radius: .25rem;
+    color: #eb4227;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 .show_wrap_grid_ui p{
     font-size: 14px;
@@ -55,4 +68,8 @@
 .shom_wp_img{
     height: 200px !important;
     width: 200px !important;
+}
+.list_shop_wrap{
+    display: flex;
+    flex-direction: row !important;
 }
