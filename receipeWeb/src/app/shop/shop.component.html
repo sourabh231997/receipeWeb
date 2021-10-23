@@ -71,7 +71,7 @@
                         </div>
                       </div>
                 </div> -->
-                <div class="shop_wrap">
+                <!-- <div class="shop_wrap">
                     <h3 class="common_design"><a href="#">Shop By Weight</a></h3>
                     <ul class="list_shop_wrap">
                         <li>250 gm</li>
@@ -90,19 +90,19 @@
                         <li>$200-$300</li>
                         <li>$200-$300</li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="shop_wrap">
                     <h3 class="common_design"><a href="#">Shop By Category</a></h3>
                     <ul class="list_shop_wrap">
-                        <li>Powders</li>
-                        <li>Tokkus/Gojju<!-- (Chutney) --></li>
-                        <li>Ready Mix</li>
-                        <li>Pickles</li>
+                        <li class="nav-item pt_tbs" id="powder-tab" data-bs-toggle="pill" data-bs-target="#powder" aria-controls="powder" aria-selected="true">Powders</li>
+                        <li class="nav-item pt_tbs" id="tokku-tab" data-bs-toggle="pill" data-bs-target="#tokku" aria-controls="tokku" aria-selected="true">Tokkus/Gojju<!-- (Chutney) --></li>
+                        <li class="nav-item pt_tbs" id="ready-mix-tab" data-bs-toggle="pill" data-bs-target="#ready-mix" aria-controls="ready-mix" aria-selected="true">Ready Mix</li>
+                        <li class="nav-item pt_tbs" id="Pickles-tab" data-bs-toggle="pill" data-bs-target="#Pickles" aria-controls="Pickles" aria-selected="true">Pickles</li>
                     </ul>
                 </div>
 
             </div>
-            <div class="col-sm-9">
+            <div class="col-sm-9 fade show active" id="powder" aria-labelledby="powder-tab">
                 <div class="grid_list_shop">
                     <div class="row">
                         <div class="col-sm-3">
@@ -179,6 +179,172 @@
                         </div> 
 
 
+                    </div>
+
+                    <!-- <div class="pagination_wrap">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                              </li>
+                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item " aria-current="page">
+                                <span class="page-link">2</span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div> -->
+
+                </div>
+                
+            </div>
+            <div class="col-sm-9 fade" id="tokku" aria-labelledby="tokku-tab"style="display:none;" >
+                <div class="grid_list_shop">
+                    <div class="row">
+                        <div class="col-sm-3">
+                           <div class="show_wrap_grid_ui">
+                               <img src="../../assets/img/tokku-1.jpg" class="img-fluid shom_wp_img">
+                                <h3 class="heading_shp"><a href="">Thecha (Red Chilli) (250 gms)</a></h3>
+                                <p>₹100.00</p>
+                                <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="show_wrap_grid_ui">
+                                <img src="../../assets/img/feature-tokku-2.jpg" class="img-fluid shom_wp_img">
+                                 <h3 class="heading_shp"><a href="">Gongura Tokku (250 gms)</a></h3>
+                                 <p>₹150.00</p>
+                                 <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="show_wrap_grid_ui">
+                                <img src="../../assets/img/feature-tokku-3.jpg" class="img-fluid shom_wp_img">
+                                 <h3 class="heading_shp"><a href="">Iyengar Puliogre Gojju (250 gms)</a></h3>
+                                 <p>₹140.00</p>
+                                 <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="show_wrap_grid_ui">
+                                <img src="../../assets/img/feature-tokku.jpg" class="img-fluid shom_wp_img">
+                                 <h3 class="heading_shp"><a href="">Tomato Tokku (250 gms)</a></h3>
+                                 <p>₹140.00</p>
+                                 <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="pagination_wrap">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                              </li>
+                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item " aria-current="page">
+                                <span class="page-link">2</span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div> -->
+
+                </div>
+                
+            </div>
+            <div class="col-sm-9 fade" id="ready-mix" aria-labelledby="ready-mix-tab"style="display:none;" >
+                <div class="grid_list_shop">
+                    <div class="row">
+                        <div class="col-sm-3">
+                           <div class="show_wrap_grid_ui">
+                               <img src="../../assets/img/mix-1.jpg" class="img-fluid shom_wp_img">
+                                <h3 class="heading_shp"><a href="">Instant Rava Idli Mix (250gms)</a></h3>
+                                <p>₹80.00</p>
+                                <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="show_wrap_grid_ui">
+                                <img src="../../assets/img/mix-2.jpg" class="img-fluid shom_wp_img">
+                                 <h3 class="heading_shp"><a href="">Instant Rava Upma Mix (250 gms)</a></h3>
+                                 <p>₹105.00</p>
+                                 <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="show_wrap_grid_ui">
+                                <img src="../../assets/img/mix-3.jpg" class="img-fluid shom_wp_img">
+                                 <h3 class="heading_shp"><a href="">Chutney Pudi (250 gms)</a></h3>
+                                 <p>₹140.00</p>
+                                 <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="pagination_wrap">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                              </li>
+                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item " aria-current="page">
+                                <span class="page-link">2</span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div> -->
+
+                </div>
+                
+            </div>
+            <div class="col-sm-9 fade" id="Pickles" aria-labelledby="Pickles-tab"style="display:none;" >
+                <div class="grid_list_shop">
+                    <div class="row">
+                        <div class="col-sm-3">
+                           <div class="show_wrap_grid_ui">
+                               <img src="../../assets/img/pickle-1.jpg" class="img-fluid shom_wp_img">
+                                <h3 class="heading_shp"><a href="">Amla Pickle (Oil Cooked) (250 gms)</a></h3>
+                                <p>₹150.00</p>
+                                <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="show_wrap_grid_ui">
+                                <img src="../../assets/img/pickle-2.jpg" class="img-fluid shom_wp_img">
+                                 <h3 class="heading_shp"><a href="">Mango Pickle (250 gms)</a></h3>
+                                 <p>₹112.00</p>
+                                 <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="show_wrap_grid_ui">
+                                <img src="../../assets/img/pickle-3.jpg" class="img-fluid shom_wp_img">
+                                 <h3 class="heading_shp"><a href="">Amla Pickle (250 gms)</a></h3>
+                                 <p>₹130.00</p>
+                                 <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="show_wrap_grid_ui">
+                                <img src="../../assets/img/pickle-4.jpg" class="img-fluid shom_wp_img">
+                                 <h3 class="heading_shp"><a href="">Lemon Pickle (250 gms)</a></h3>
+                                 <p>₹125.00</p>
+                                 <img src="../../assets/img/star-img.png" class="img-fluid star_img">
+                            </div>
+                        </div>
                     </div>
 
                     <!-- <div class="pagination_wrap">
