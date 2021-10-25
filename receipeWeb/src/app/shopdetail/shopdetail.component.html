@@ -3,24 +3,25 @@
     <div class="container">
         <div class="common_heading_banner">
             <h1>Shop Detail</h1>
-            <p class="bread_wrap"><a href="#" class="home_bread">Home</a> / <a href="/blog" class="home_bread">Blog</a> / Berberry </p>
+            <p class="bread_wrap"><a routerLink="/" class="home_bread">Home</a> / <a routerLink="/shop"class="home_bread">Shop</a></p>
         </div>
     </div>
 </section>
 
 <section class="common_padding shop_detail_wrap">
  <div class="container">
-     <div class="row">
+     <ng-container *ngFor="let data of idArr;let i=index">
+     <div class="row" *ngIf="data == indexOfId + 1">
          <div class="col-sm-6">
              <div class="img_shp_detail">
-               <img src="../../assets/img/shop-img-detail-1.jpg" class="img-fluid">
+               <img src="{{imgArr[indexOfId]}}" class="img-fluid">
              </div>
          </div>
          <div class="col-sm-6">
             <div class="img_shp_content">
-               <h3>Pepper Rasam Powder (250 gms)</h3>
+               <h3>{{contentArr[indexOfId]}}</h3>
                <h6>RASAYATI</h6>
-                <p> ₹190.00</p>
+                <p>{{priceArr[indexOfId]}}</p>
             </div>
             <div class="product_detail">
                 <h3>Product details</h3>
@@ -28,6 +29,7 @@
             </div>
         </div>
      </div>
+    </ng-container>
  </div>
 </section>
 

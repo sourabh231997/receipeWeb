@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'blog-detail', component: BlogdetailComponent },
   { path: 'shop', component: ShopComponent },
-  { path: 'shop-detail', component: ShopdetailComponent }
+  { path: 'shop-detail/:id', component: ShopdetailComponent }
   // {path:'**',redirectTo:'/',pathMatch:'full'}
   // { path: '**', redirectTo: '' },
 ];
