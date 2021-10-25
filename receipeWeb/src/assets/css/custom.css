@@ -7,6 +7,12 @@
 li{
     list-style: none;
 }
+p,div, input{
+    font-size: 14px;
+}
+.form-control{
+    font-size: 14px !important;
+}
 a{
     text-decoration: none !important;
 }
@@ -36,8 +42,11 @@ a{
 }
 .footer__title {
     margin-bottom: 30px;
-    color: #f4b323;
+    color: #ec4327;
     font-size: 20px;
+}
+.best_product_list h3 {
+    margin-top: 16px;
 }
 .footer_menu.dt-sc-list li a {
     color: #ffffff;
@@ -163,8 +172,10 @@ footer .site-footer__bottom p, footer .site-footer__bottom a {
 .header_cls .header_wrap .nav-item a.active{
     color: #fff;
 }
-.logo_wrap{
+.logo_wrap {
     width: 100px;
+    height: 43px !important;
+    object-fit: cover;
 }
 .office-mail a {
     color: #fff;
@@ -178,7 +189,7 @@ footer .site-footer__bottom p, footer .site-footer__bottom a {
 }
 .heading_main h3 {
     font-size: 26px;
-    color: #a74a18;
+    color: #ec4327;
     font-weight: 700;
 }
 .heading_main img {

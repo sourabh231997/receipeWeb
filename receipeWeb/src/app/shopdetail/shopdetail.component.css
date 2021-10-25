@@ -1,0 +1,17 @@
+.img_shp_content h3{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #f4b331;
+}
+.img_shp_content h6{
+    font-size: 14px;
+    font-weight: 700;
+}
+.img_shp_content p{
+    font-size: 12px;
+    font-weight: 700;
+}
+.product_detail p {
+    font-size: 14px;
+}
